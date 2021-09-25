@@ -17,8 +17,10 @@ import 'package:touchable/src/shapes/rectangle.dart';
 import 'package:touchable/src/shapes/rounded_rectangle.dart';
 import 'package:touchable/src/shapes/util.dart';
 
-class TouchyCanvas {
+class TouchyCanvas{
   final Canvas _canvas;
+  ///Canvas accessor
+  Canvas get getCanvas =>_canvas;
 
   final ShapeHandler _shapeHandler = ShapeHandler();
 
